@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Minh | Portfolio</title>
+
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="portfolio-header">
+  <div class="container">
+    <div class="logo">
+      <span class="logo-highlight">Portfolio Minh</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">Giới Thiệu</a>
+      <a href="#projects">Dự Án</a>
+      <a href="#skills">Kỹ Năng</a>
+      <a href="#contact" class="btn">Liên Hệ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<main id="home">
+  <section class="hero container">
+    <div class="hero-image">
+      <img src="../img/profile.jpg" alt="Minh Portfolio">
+    </div>
+
+    <div class="hero-content">
+      <h1>Xin chào, tôi là <span>Công Minh</span></h1>
+      <h2>Lập Trình Viên Website / Mobile</h2>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn-primary">Giới Thiệu</a>
+        <a href="#contact" class="btn-outline">Liên Hệ</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ABOUT -->
+<section id="about" class="section container">
+  <h2 class="section-title">Giới Thiệu</h2>
+  <p class="section-desc">
+    Là sinh viên năm 4 chuyên ngành Công Nghệ Phần Mềm, chuyên về phát triển full-stack với kỹ năng vững vàng ở cả backend và frontend. Tôi có nền tảng tốt về phân tích, thiết kế và phát triển phần mềm. Tôi đam mê xây dựng các ứng dụng tối ưu, có khả năng mở rộng và thân thiện với người dùng, đồng thời mong muốn đóng góp vào các giải pháp phần mềm chất lượng cao.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Dự Án</h2>
+
+    <div class="projects-wrapper">
+
+      <!-- LEFT -->
+      <div class="projects-list">
+
+        <div class="project-item active"
+          data-title="24hClothesShop"
+          data-time="08/2023 – 11/2023"
+          data-role="Fullstack"
+          data-desc="• Website bán quần áo nam
+• Giỏ hàng, thanh toán online
+• Quản lý đơn hàng"
+          data-tech="ASP.NET MVC, SQL Server"
+          data-images='[
+            "../img/quanao/24h-1.jpg", 
+            "../img/quanao/24h-2.jpg", 
+            "../img/quanao/24h-3.jpg", 
+            "../img/quanao/24h-4.jpg", 
+            "../img/quanao/24h-5.jpg", 
+            "../img/quanao/24h-6.jpg", 
+            "../img/quanao/24h-7.jpg"
+          ]'>
+          <h3>24hClothesShop</h3>
+          <span>Trang Bán Hàng</span>
+        </div>
+
+        <div class="project-item"
+          data-title="Ckicky"
+          data-time="09/2024 – 11/2024"
+          data-role="Fullstack"
+          data-desc="• App đặt gà rán online
+• Giao diện mobile
+• Quản lý đơn hàng"
+          data-tech="Flutter, MongoDB"
+          data-images='[
+            "../img/garan/ckicky-1.jpg", 
+            "../img/garan/ckicky-2.jpg", 
+            "../img/garan/ckicky-3.jpg", 
+            "../img/garan/ckicky-4.jpg", 
+            "../img/garan/ckicky-5.jpg", 
+            "../img/garan/ckicky-6.jpg", 
+            "../img/garan/ckicky-7.jpg"
+          ]'>
+          <h3>Ckicky</h3>
+          <span>Ứng Dụng Điện Thoại</span>
+        </div>
+
+        <div class="project-item"
+          data-title="ChilliChilllili"
+          data-time="05/2025 – 07/2025"
+          data-role="Fullstack"
+          data-desc="• Web nghe nhạc
+• Playlist & tìm kiếm
+• Backend + Frontend"
+          data-tech="ASP.NET Core, SQL Server"
+          data-images='[
+            "../img/nghenhac/chilli-1.jpg", 
+            "../img/nghenhac/chilli-2.jpg", 
+            "../img/nghenhac/chilli-3.jpg", 
+            "../img/nghenhac/chilli-4.jpg", 
+            "../img/nghenhac/chilli-5.jpg", 
+            "../img/nghenhac/chilli-6.jpg", 
+            "../img/nghenhac/chilli-7.jpg", 
+            "../img/nghenhac/chilli-8.jpg"
+          ]'>
+          <h3>ChilliChilllili</h3>
+          <span>Nền Tảng Nghe Nhạc</span>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="project-detail">
+
+        <div class="project-slider">
+          <button class="slider-btn prev">‹</button>
+          <img id="projectImg">
+          <button class="slider-btn next">›</button>
+        </div>
+
+        <h3 id="projectTitle"></h3>
+        <p id="projectTime"></p>
+        <p><b>Vai Trò:</b> <span id="projectRole"></span></p>
+
+        <pre id="projectDesc"></pre>
+
+        <p class="tech"><b>Công Nghệ:</b> <span id="projectTech"></span></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SKILLS -->
+<section id="skills" class="section container">
+  <h2 class="section-title">Kỹ Năng</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="icon html"></i>
+      <span>HTML</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="icon css"></i>
+      <span>CSS</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="icon js"></i>
+      <span>JavaScript</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="icon dotnet"></i>
+      <span>ASP.NET Core</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="icon sql"></i>
+      <span>SQL Server</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="icon git"></i>
+      <span>Github</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section section-dark">
+  <div class="container contact-box">
+    <h2 class="section-title">Liên Hệ</h2>
+    <p class="contact-desc">
+      Nếu bạn quan tâm đến portfolio của tôi hoặc muốn trao đổi về công việc,
+      đừng ngần ngại liên hệ 👋
+    </p>
+
+    <div class="contact-items">
+
+      <!-- EMAIL -->
+      <a href="mailto:congminhpham163@gmail.com" class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <p>Email</p>
+          <strong>congminhpham163@gmail.com</strong>
+        </div>
+      </a>
+
+      <!-- PHONE -->
+      <a href="tel:+849xxxxxxxx" class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div>
+          <p>Số điện thoại</p>
+          <strong>0373542421</strong>
+        </div>
+      </a>
+
+      <!-- GITHUB -->
+      <a href="https://github.com/congminhpham163" target="_blank" class="contact-item">
+        <span class="contact-icon">💻</span>
+        <div>
+          <p>GitHub</p>
+          <strong>KogMint</strong>
+        </div>
+      </a>
+
+      <!-- LINKEDIN -->
+      <a href="https://www.linkedin.com/in/congminhpham163/" target="_blank" class="contact-item">
+        <span class="contact-icon">🔗</span>
+        <div>
+          <p>LinkedIn</p>
+          <strong>Phạm Công Minh</strong>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  © 2026 Minh. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+<script>
+const items = document.querySelectorAll(".project-item");
+const imgEl = document.getElementById("projectImg");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+let images = [];
+let index = 0;
+
+function showImage(i) {
+  imgEl.style.opacity = 0;
+  setTimeout(() => {
+    imgEl.src = images[i];
+    imgEl.style.opacity = 1;
+  }, 150);
+}
+
+function loadProject(el) {
+  images = JSON.parse(el.dataset.images);
+  index = 0;
+
+  showImage(index);
+  projectTitle.textContent = el.dataset.title;
+  projectTime.textContent = el.dataset.time;
+  projectRole.textContent = el.dataset.role;
+  projectDesc.textContent = el.dataset.desc;
+  projectTech.textContent = el.dataset.tech;
+
+  items.forEach(i => i.classList.remove("active"));
+  el.classList.add("active");
+}
+
+prevBtn.onclick = () => {
+  index = (index - 1 + images.length) % images.length;
+  showImage(index);
+};
+
+nextBtn.onclick = () => {
+  index = (index + 1) % images.length;
+  showImage(index);
+};
+
+items.forEach(item => item.onclick = () => loadProject(item));
+loadProject(items[0]);
+</script>
+
